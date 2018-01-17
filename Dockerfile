@@ -19,7 +19,7 @@ COPY boot_run.sh /etc/boot_run.sh
 RUN chown root.root /etc/boot_run.sh
 RUN chmod 700 /etc/boot_run.sh
 
-EXPOSE 80/tcp 4505/tcp 4506/tcp
+EXPOSE 80 4505 4506
 
 
 ENTRYPOINT ["/etc/boot_run.sh"]
